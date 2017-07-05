@@ -8,11 +8,10 @@
   </head>
   <body>
       <div id="wrapper">
-        {{#userBox}}
-          {{#users}}
+        {{#robots}}
             <div class="user">
-              <a href=/{{id}}>
-                <img class="img" src={{avatar}}>
+              <a href="/{{_id}}">
+                <img class="img" src="{{avatar}}">
                 <p class="name">{{name}}</p>
                 {{#job}}
                   <p class="job">{{job}}, {{company}}</p>
@@ -22,8 +21,7 @@
                 {{/job}}
               </a>
             </div>
-          {{/users}}
-        {{/userBox}}
+        {{/robots}}
       </div>
   </body>
 </html>
