@@ -1,0 +1,105 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+#wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: top;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.user {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 22%;
+  border: 1px solid lightgray;
+  padding: 0 20px 20px 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.name {
+  color: blue;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.job {
+  color: black;
+  text-align: left;
+}
+
+.forhire {
+  color: red;
+  text-align: left;
+}
+
+/*------ detail page ------------*/
+.wrapper2 {
+  text-align: center;
+  width: 80vw;
+}
+
+.user-2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+}
+
+.wrapper-image {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.round {
+  border: 1px solid lightgray;
+  border-radius: 90%;
+  width: 150px;
+  float: right;
+}
+
+.contact {
+  width: 60%;
+  margin: 10px 20px;
+}
+
+.name-2 {
+  font-size: 3em;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row nowrap;
+  margin-bottom: 20px;
+}
+
+.edu-row, .skill-row {
+  display: flex;
+  flex-direction: row nowrap;
+}
+
+.edu, .skill {
+  width: 40%;
+  margin: 0 20px 10px 0;
+  text-align: right;
+}
+
+.school, .skills {
+  width: 60%;
+  margin: 0 20px 10px 20px;
+}

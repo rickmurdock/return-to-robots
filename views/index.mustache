@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create User Directory</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+      <div id="wrapper">
+        {{#userBox}}
+          {{#users}}
+            <div class="user">
+              <a href=/{{id}}>
+                <img class="img" src={{avatar}}>
+                <p class="name">{{name}}</p>
+                {{#job}}
+                  <p class="job">{{job}}, {{company}}</p>
+                {{/job}}
+                {{^job}}
+                  <p class="forhire">Available for hire<p>
+                {{/job}}
+              </a>
+            </div>
+          {{/users}}
+        {{/userBox}}
+      </div>
+  </body>
+</html>
