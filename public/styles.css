@@ -103,3 +103,23 @@ a {
   width: 60%;
   margin: 0 20px 10px 20px;
 }
+
+#menu {
+  padding: 30px;
+  display: flex;
+  flex-flow: row, nowrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.menu-item {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin: 30px 10px 0 10px;
+  color: lightgray;
+  background-color: green;
+  border: 1px solid lightslategray;
+  border-radius: 5px;
+}
+
+

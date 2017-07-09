@@ -4,15 +4,22 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
   </head>
   <body>
+    <nav>
+      <ul id="menu">  
+        <li><a class="menu-item" href="/">All Robots</a></li>
+        <li><a class="menu-item" href="employed">Employed</a></li>
+        <li><a class="menu-item" href="unemployed">Looking for Work</a></li>
+      </ul>
+    </nav>
     <div id="wrapper2">
       {{#robot}}
         <div class="user-2">
           <div class="top-row">
             <div class="wrapper-image">
-              <img class="round" src={{avatar}}>
+              <img class="round" src="{{avatar}}">
             </div>
             <div class="contact">
               <p class="name-2">{{name}}</p>
@@ -21,7 +28,7 @@
                 {{#city}}
                   {{city}}, 
                 {{/city}}
-                {{country}} 
+                <a href="country/{{country}}">{{country}}</a>
               {{/address}}
               | 
               {{#job}}
@@ -51,7 +58,7 @@
             <div class="skills">
               {{#skills}}
                 {{#.}}
-                  {{.}}<br>
+                  <a href="skill/{{.}}">{{.}}</a><br>
                 {{/.}}
               {{/skills}}
             </div>
